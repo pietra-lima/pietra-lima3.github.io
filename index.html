@@ -8,14 +8,14 @@
         // Função que verifica a resposta
         function verificarResposta() {
             // Pegando o valor do campo de texto
-            var resposta = document.getElementById("sim").value.trim(); // Remove espaços extras
+            var resposta = document.getElementById("resposta").value.trim(); // Corrigido para o ID correto
             var respostaCerta = "sim";  // Resposta correta é "sim"
 
             // Verificação da resposta, ignorando letras maiúsculas e minúsculas
             if (resposta.toLowerCase() === respostaCerta.toLowerCase()) {
                 // Se a resposta estiver certa, redireciona para o YouTube
                 alert("Resposta correta! Redirecionando para a música...");
-                window.location.href = "v=https://www.youtube.com/watch?v=dQw4w9WgXcQ";  // Coloque o link correto da música aqui
+                window.location.href = "https://youtu.be/ivHE7pQEEHI?si=5btMzrpZ30T6yuGA";  // Novo link da música
             } else {
                 // Se a resposta estiver errada, mostra uma mensagem de erro
                 alert("Resposta incorreta. Por favor, tente novamente.");
@@ -24,9 +24,9 @@
     </script>
 </head>
 <body>
-    <h1>Oi, gatinha! Eu tenho uma surpresa para voce!:</h1> <!-- Pergunta carinhosa -->
+    <h1>Oi, gatinha! Eu tenho uma surpresa para você!</h1> <!-- Pergunta carinhosa -->
     <p>Você aceita ouvir uma música que escolhi especialmente pra você? <strong>Sim ou não?</strong></p> <!-- Pergunta mais afetuosa -->
-    <input type="text" id="sim" placeholder="Digite sua resposta aqui"> <!-- Campo de resposta -->
+    <input type="text" id="resposta" placeholder="Digite sua resposta aqui"> <!-- Campo de resposta -->
     <button onclick="verificarResposta()">Enviar</button> <!-- Botão para verificar a resposta -->
 </body>
 </html>
